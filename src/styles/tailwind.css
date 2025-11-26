@@ -1,5 +1,7 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.hero-gradient { background: linear-gradient(135deg, rgba(2,6,23,0.9), rgba(4,8,25,0.95)); }
+/* small custom rules */
+:root { --accent: #f97316; }
+body { font-family: "Poppins", Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(180deg,#060711 0%,#0b1220 100%); }
