@@ -51,7 +51,7 @@ export default function App(){
             <Contact />
             <div className="bg-white/5 p-4 rounded-lg text-sm">
               <div className="font-semibold mb-1">Office</div>
-              <div className="text-slate-300">Kismatpur, Hyderabad</div>
+              <div className="text-slate-300">Mehdipatnam, Hyderabad</div>
               <div className="mt-2 text-xs text-slate-400">GST: 36BXCPP4415Q1ZZ</div>
               <a className="block mt-3 text-sm text-orange-400" href="/brochure.pdf" target="_blank" rel="noreferrer">Download Brochure (PDF)</a>
             </div>
