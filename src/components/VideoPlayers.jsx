@@ -16,7 +16,44 @@ export default function VideoPlayers() {
       </p>
 
       <div className="grid md:grid-cols-2 gap-4">
-        {/* Video 1 */}
+
+        {/* New Compressed Video 1 */}
+        <div className="bg-slate-900/70 rounded-xl border border-slate-800 p-3">
+          <div className="aspect-video rounded-lg overflow-hidden bg-black">
+            <video
+              src="/videos/cuttingvideo1.mp4"
+              className="w-full h-full object-cover"
+              controls
+              playsInline
+            />
+          </div>
+          <div className="mt-3 text-sm text-slate-200 font-medium">
+            RCC Cutting – On-site Work
+          </div>
+          <div className="text-xs text-slate-400">
+            Real footage showing RCC cutting with safety measures.
+          </div>
+        </div>
+
+        {/* New Compressed Video 2 */}
+        <div className="bg-slate-900/70 rounded-xl border border-slate-800 p-3">
+          <div className="aspect-video rounded-lg overflow-hidden bg-black">
+            <video
+              src="/videos/cuttingvideo2.mp4"
+              className="w-full h-full object-cover"
+              controls
+              playsInline
+            />
+          </div>
+          <div className="mt-3 text-sm text-slate-200 font-medium">
+            Concrete Slab Cutting – Precision Work
+          </div>
+          <div className="text-xs text-slate-400">
+            Smooth slab cutting operations on a running construction site.
+          </div>
+        </div>
+
+        {/* Old Video 1 */}
         <div className="bg-slate-900/70 rounded-xl border border-slate-800 p-3">
           <div className="aspect-video rounded-lg overflow-hidden bg-black">
             <video
@@ -30,12 +67,11 @@ export default function VideoPlayers() {
             Concrete Cutting • Live Site Work
           </div>
           <div className="text-xs text-slate-400">
-            Demonstration of precision RCC cutting with safety precautions in
-            place.
+            Demonstration of precision RCC cutting with safety precautions.
           </div>
         </div>
 
-        {/* Video 2 */}
+        {/* Old Video 2 */}
         <div className="bg-slate-900/70 rounded-xl border border-slate-800 p-3">
           <div className="aspect-video rounded-lg overflow-hidden bg-black">
             <video
@@ -49,10 +85,10 @@ export default function VideoPlayers() {
             Core Cutting &amp; Finishing
           </div>
           <div className="text-xs text-slate-400">
-            Core cutting operations for openings and services in concrete
-            structures.
+            Core cutting operations for openings and service provisions.
           </div>
         </div>
+
       </div>
     </section>
   );
