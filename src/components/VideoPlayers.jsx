@@ -1,19 +1,59 @@
-import React from 'react'
+import React from "react";
 
-export default function VideoPlayers(){
-  const videos = ['/videos/42926-434300944.mp4','/videos/6473952-uhd_3840_2160_25fps.mp4']
-
+export default function VideoPlayers() {
   return (
-    <section className="space-y-4">
-      <h3 className="text-xl font-semibold text-slate-100">Project Videos</h3>
+    <section
+      id="videos"
+      className="bg-white/5 p-6 rounded-lg mt-4 border border-slate-800"
+    >
+      <h3 className="text-lg font-semibold mb-2 text-slate-100">
+        On-site Cutting &amp; Construction Work
+      </h3>
+      <p className="text-sm text-slate-300 mb-4">
+        Real project footage from PL Construction &amp; Engineering Services —
+        precision cutting, controlled demolition, and safe RCC/core cutting
+        operations.
+      </p>
+
       <div className="grid md:grid-cols-2 gap-4">
-        {videos.map((v,i) => (
-          <div key={v} className="bg-slate-800 rounded-lg p-2 border border-slate-700">
-            <video src={v} controls preload="metadata" className="w-full rounded-md" />
-            <div className="mt-2 text-sm text-slate-300">Video {i+1}</div>
+        {/* Video 1 */}
+        <div className="bg-slate-900/70 rounded-xl border border-slate-800 p-3">
+          <div className="aspect-video rounded-lg overflow-hidden bg-black">
+            <video
+              src="/videos/42926-434300944.mp4"
+              className="w-full h-full object-cover"
+              controls
+              playsInline
+            />
           </div>
-        ))}
+          <div className="mt-3 text-sm text-slate-200 font-medium">
+            Concrete Cutting • Live Site Work
+          </div>
+          <div className="text-xs text-slate-400">
+            Demonstration of precision RCC cutting with safety precautions in
+            place.
+          </div>
+        </div>
+
+        {/* Video 2 */}
+        <div className="bg-slate-900/70 rounded-xl border border-slate-800 p-3">
+          <div className="aspect-video rounded-lg overflow-hidden bg-black">
+            <video
+              src="/videos/6473952-uhd_3840_2160_25fps.mp4"
+              className="w-full h-full object-cover"
+              controls
+              playsInline
+            />
+          </div>
+          <div className="mt-3 text-sm text-slate-200 font-medium">
+            Core Cutting &amp; Finishing
+          </div>
+          <div className="text-xs text-slate-400">
+            Core cutting operations for openings and services in concrete
+            structures.
+          </div>
+        </div>
       </div>
     </section>
-  )
+  );
 }
